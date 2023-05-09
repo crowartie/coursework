@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block scripts -%}
+	<script type="text/javascript">var id_test={{idTest}};</script>
+	<script  src="{{url_for('static',filename='js/test/new_question/create_question.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/show_modal_window.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/create_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/edit_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/delete_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/changing_true_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/save_answer_options_and_question.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/new_question/cancel.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/show_modal_window.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/delete_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/edit_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/changing_true_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/create_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/cancel.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/exist_question/save_answer_option.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/delete_question.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/edit_question.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/test/scripts_ajax.js')}}"></script>
+	<script defer src="{{url_for('static',filename='js/test/actionButtonsInItem.js')}}"></script>
+	<link href="{{url_for('static',filename='css/css-test/style header content.css')}}" rel="stylesheet">
+	<link href="{{url_for('static',filename='css/css-test/style modal window.css')}}" rel="stylesheet">
+	<link href="{{url_for('static',filename='css/css-test/style box content.css')}}" rel="stylesheet">
+
+{% endblock -%}
+
+{% block containerHeaderContent -%}
+<div class="container-name-test">
+	<span>Тест: {{nameTest}}</span>
+</div>
+<div class="container-header-content">
+	<div class="container-label">
+		<span>Раздел: Вопросы</span>
+	</div>
+	<div class="container-button">
+		<button><img src="{{url_for('static',filename='img/add(plus).svg')}}">Добавить Вопрос</button>
+	</div>
+</div>
+{% endblock -%}
+
+{% block content %}
+	{% for question in questions -%}
+	<div class="item-in-box-content" id="{{question['id']}}">
+		<span>{{question['question']}}</span>
+    	<div class="action-buttons-in-item">
+			<button type="button" class="edit"><img src="{{url_for('static',filename='img/edit-img.svg')}}" alt=""> </button>
+        	<button type="button" class="del"><img src="{{url_for('static',filename='img/del-img.svg')}}" alt=""> </button>
+    	</div>
+	</div>
+	{% endfor -%}
+{% endblock %}

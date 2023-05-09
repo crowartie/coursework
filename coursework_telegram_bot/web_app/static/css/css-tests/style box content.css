@@ -1,0 +1,45 @@
+.window .container .container-content .box-content .item-in-box-content{
+	display:flex;
+	background-color: #fff;
+	justify-content: space-between;
+	border-bottom: solid 1px #cdd1d3;
+}
+.window .container .container-content .box-content .item-in-box-content a{
+    width:70%;
+}
+.window .container .container-content .box-content .item-in-box-content input[type="text"]{
+    margin-top:6px;
+	margin-bottom:3px;
+	font-size: 0.9em;
+	width:70%;
+}
+
+.window .container .container-content .box-content .item-in-box-content a span{
+	display:block;
+	padding-top:6px;
+	padding-bottom:3px;
+	font-size: 0.9em;
+	word-wrap: break-word;
+}
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item label{
+	cursor:pointer;
+	font-size:12px;
+	position:relative;
+	top:2px;
+	color:green;
+}
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item label input[type="checkbox"]{
+	width:12px;
+	vertical-align:middle;
+	padding:0;
+}
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item button[type="button"]{
+	cursor: pointer;
+	background: none;
+    border: none;
+    position: relative;
+    top: 1px;
+}
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item button[type="button"] img{
+	vertical-align:middle;
+}

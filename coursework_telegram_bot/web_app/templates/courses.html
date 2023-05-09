@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block scripts -%}
+    <link href="{{url_for('static',filename='css/css-courses/style header content.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/css-courses/style box content.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/css-courses/style modal window.css')}}" rel="stylesheet">
+    <script  src="{{url_for('static',filename='js/courses/exist_course/show_modal_window.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/exist_course/save_course.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/scripts_ajax.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/exist_course/cancel.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/edit_status.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/uploading_file.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/new_course/create_course.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/new_course/show_modal_window.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/new_course/save_course.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/new_course/cancel.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/edit_course.js')}}"></script>
+    <script  src="{{url_for('static',filename='js/courses/delete_course.js')}}"></script>
+	<script defer src="{{url_for('static',filename='js/courses/action_buttons.js')}}"></script>
+{% endblock -%}
+{% block containerHeaderContent -%}
+	<div class="container-header-content">
+		<div class="container-label">
+			<span>Раздел: Курсы</span>
+		</div>
+		<div class="container-button">
+			<button><img src="{{url_for('static',filename='img/add(plus).svg')}}">Добавить курс</button>
+		</div>
+	</div>
+{% endblock -%}
+{% block content %}
+    {% for course in courses -%}
+    <div class="item-in-box-content" id="{{course['id']}}">
+        {% if course['status']==0 %}
+        <span style="cursor:pointer">{{course['name']}}</span>
+        <div class="action-buttons-in-item">
+            <label style="color: red;"><span>Не активный</span><input type="checkbox"/></label>
+        {% else %}
+        <span style="cursor:auto">{{course['name']}}</span>
+        <div class="action-buttons-in-item">
+            <label><span>Активный</span><input type="checkbox" checked/></label>
+        {% endif %}
+            <button class="edit" type="button"><img src="{{url_for('static',filename='img/edit-img.svg')}}" alt=""> </button>
+            <button class="del" type="button"><img src="{{url_for('static',filename='img/del-img.svg')}}" alt=""> </button>
+        </div>
+    </div>
+    {% endfor -%}
+{% endblock %}

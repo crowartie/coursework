@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+		<link href="{{url_for('static',filename='css/jquery.toast.css')}}" rel="stylesheet">
+		<script defer src="{{url_for('static',filename='js/jquery.toast.js')}}"></script>
+		<script src="{{url_for('static',filename='js/jquery-3.6.3.js')}}"></script>
+		<script defer src="{{url_for('static',filename='js/menu-style.js')}}"></script>
+		<script defer src="{{url_for('static',filename='js/viewport.js')}}"></script>
+		{% block scripts -%} {% endblock -%}
+	</head>
+	<body>
+		<div class="window">
+			<div class="shadow-menu"></div>
+			<div class="left-menu">
+				<div class="left-menu-inner">
+					<div class="menu-header">
+						<span>
+							<img src="{{url_for('static',filename='img/logo.svg')}}">
+						</span>
+						<button type="button" class="container-burger-menu">
+						<img src="{{url_for('static',filename='img/burger-menu.svg')}}"/>
+					</button>
+					</div>
+					<div class="menu-box">
+						<div class="menu-box-inner">
+							<div class="item-in-menu">
+								<a href="/courses">
+									<span>Курсы</span>
+								</a>
+							</div>
+							<div class="item-in-menu">
+								<a href="/tests">
+									<span>Тесты</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="container-header ">
+					<button type="button" class="container-burger-menu">
+						<img src="{{url_for('static',filename='img/burger-menu.svg')}}">
+					</button>
+					<div class="container-login">
+						<span>Пользователь: {{current_user.username}}</span>
+						|
+						<a href="{{url_for('logout')}}">
+							<img src="{{url_for('static',filename='img/logout.svg')}}">
+							<span>Выйти</span>
+						</a>
+					</div>
+				</div>
+				{% block containerHeaderContent -%} {% endblock -%}
+				<div class="container-content">
+					<div class="box-content">
+						{% block content -%} {% endblock -%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

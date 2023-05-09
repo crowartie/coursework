@@ -1,0 +1,148 @@
+.window .container-modal-window{
+    background:#1a1d1e63;
+    display: block;
+    z-index:3;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.window .container-modal-window .inner-modal-window{
+    position:relative;
+    top:20%;
+    left:20%;
+    width:60%;
+    border: 1px solid #ddd;
+    background:#fff;
+    padding-bottom:20px;
+}
+.window .container-modal-window .inner-modal-window .container-answer-option{
+    width:96%;
+    padding-bottom: 10px;
+    margin:0 auto;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window{
+    position:relative;
+    width:96%;
+    left:2%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #cdd1d3;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .question-modal-window{
+    border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+	text-align:center;
+	width:99.5%;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .question-modal-window span{
+    font-size:1.3em;
+    display:block;
+    padding-top:3.5px;
+    padding-bottom: 2px;
+
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .label-modal-window{
+    display: flex;
+	justify-content: space-between;
+    width:99.80%;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .label-modal-window .container-label{
+    border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+	text-align:center;
+    width:82%;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .label-modal-window .container-label span{
+    font-size:1.3em;
+    display:block;
+    padding-top:3.5px;
+    padding-bottom: 2px;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .label-modal-window  button img{
+    width:18px;
+    position:relative;
+    vertical-align:middle;
+    margin-right:5px;
+}
+.window .container-modal-window .inner-modal-window .container-header-modal-window .label-modal-window  button{
+    position:relative;
+    width:17%;
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+	cursor:pointer;
+}
+
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option{
+    display:flex;
+	background-color: #fff;
+	justify-content: space-between;
+	border-bottom: solid 1px #cdd1d3;
+}
+
+
+
+
+
+
+
+
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option span{
+	padding-top:6px;
+	padding-bottom:3px;
+	font-size: 0.9em;
+	word-wrap: break-word;
+	width:60%;
+}
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option label{
+	cursor:pointer;
+	font-size:12px;
+	position:relative;
+	top:2px;
+	color:green;
+	display: contents;
+}
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option label input[type="radio"]{
+	width:12px;
+	vertical-align:middle;
+	padding:0;
+}
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option .action-buttons-in-item button[type="button"]{
+	cursor: pointer;
+	background: none;
+    border: none;
+    position: relative;
+    top: 1px;
+}
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option .action-buttons-in-item button[type="button"] img{
+	vertical-align:middle;
+
+}
+.window .container-modal-window .inner-modal-window .container-button{
+    display: flex;
+    justify-content: space-around;
+}
+.window .container-modal-window .inner-modal-window .container-button button{
+    width:40%;
+    height:30px;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    border-radius: 3px;
+}
+.window .container-modal-window .inner-modal-window .container-button .save{
+    background:green;
+    color:white;
+}
+.window .container-modal-window .inner-modal-window .container-button .cancel{
+    background:red;
+    color:white;
+}
+
+.window .container-modal-window .inner-modal-window .container-answer-option .item-answer-option input[type="text"]{
+    width:60%;
+}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block scripts -%}
+	<script  src="{{url_for('static',filename='js/tests/scripts_ajax.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/tests/delete_script.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/tests/edit_status_script.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/tests/edit_name_script.js')}}"></script>
+	<script  src="{{url_for('static',filename='js/tests/add_test_script.js')}}"></script>
+	<script defer src="{{url_for('static',filename='js/tests/actionButtonsInItem.js')}}"></script>
+	<link href="{{url_for('static',filename='css/css-tests/style box content.css')}}" rel="stylesheet">
+	<link href="{{url_for('static',filename='css/css-tests/style header content.css')}}" rel="stylesheet">
+{% endblock -%}
+
+{% block containerHeaderContent -%}
+	<div class="container-header-content">
+		<div class="container-label">
+			<span>Раздел: Тесты</span>
+		</div>
+		<div class="container-button">
+			<button><img src="{{url_for('static',filename='img/add(plus).svg')}}">Добавить тест</button>
+		</div>
+	</div>
+{% endblock -%}
+
+{% block content %}
+	{% for test in tests -%}
+		<div class="item-in-box-content" id="{{test['id']}}">
+			{% if test['status']==0 %}
+    		<a style="pointer-events: auto;" href="/tests/{{test['id']}}">
+				<span>{{test['name']}}</span>
+			</a>
+    		<div class="action-buttons-in-item">
+        		<label style="color: red;">
+					<span>Не активный</span>
+					<input type="checkbox"/>
+				</label>
+				<button type="button" class="edit"><img src="{{url_for('static',filename='img/edit-img.svg')}}" alt=""> </button>
+        		<button type="button" class="del"><img src="{{url_for('static',filename='img/del-img.svg')}}" alt=""> </button>
+        	{% else %}
+			<a style="pointer-events: none;" href="/tests/{{test['id']}}">
+				<span>{{test['name']}}</span>
+			</a>
+    		<div class="action-buttons-in-item">
+        		<label>
+					<span>Активный</span>
+					<input type="checkbox"  checked/>
+				</label>
+				<button type="button" class="edit"><img src="{{url_for('static',filename='img/edit-img.svg')}}" alt=""> </button>
+        		<button type="button" class="del"><img src="{{url_for('static',filename='img/del-img.svg')}}" alt=""> </button>
+        	{% endif %}
+    		</div>
+		</div>
+	{% endfor -%}
+{% endblock %}

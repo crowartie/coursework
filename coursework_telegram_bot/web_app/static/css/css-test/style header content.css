@@ -1,0 +1,53 @@
+.window .container .container-header-content{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+    top: 70px;
+	left: 11%;
+    width: 71.15%;
+}
+.window .container .container-header-content .container-label{
+	max-width:500px;
+	width:80%;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+	text-align:center;
+}
+.window .container .container-header-content .container-label span{
+	display: block;
+	font-size:1.3em;
+	padding-top:3px;
+	padding-bottom:5px;
+}
+.window .container .container-header-content .container-button{
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+}
+.window .container .container-header-content .container-button button{
+	position:relative;
+	background: #fff;
+	border: none;
+	height:33px;
+	top:1px;
+}
+.window .container .container-header-content .container-button button img{
+	width:18px;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.window .container .container-name-test{
+	width:71%;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+	text-align:center;
+	position: relative;
+    top: 70px;
+    margin-bottom: 6px;
+	left: 11%;
+}
+.window .container .container-name-test span{
+    display: block;
+	font-size:1.3em;
+	padding-top:3px;
+	padding-bottom:5px;
+}

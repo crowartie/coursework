@@ -1,0 +1,140 @@
+body{
+	margin:0;
+	font-size:16px;
+	font-family:Roboto Condensed,Arial,sans-serif	;
+}
+.window{
+	position:relative;
+	min-height:100vh;
+}
+.window .shadow-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #1a1d1e63;
+    overflow: hidden;
+}
+.window .left-menu{
+	background: #1489bb;
+	width:250px;
+	top:0;
+	left:0;
+	bottom:0;
+	position: fixed;
+    z-index: 2;
+}
+.window .left-menu .left-menu-inner{
+	width:250px;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	overflow:hidden;
+}
+.window .left-menu .left-menu-inner .menu-header{
+	background: #1a3e4e;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	height:50px;
+	right:0;
+}
+.window .left-menu .left-menu-inner .menu-header span{
+	padding-left:30px;
+	padding-top:15px;
+	display:block;
+	right: 50px;
+    position: absolute;
+}
+.window .left-menu .left-menu-inner .menu-header span img{
+	width:180px;
+}
+.container-burger-menu{
+    display:none;
+    cursor: pointer;
+    padding:15px;
+    position: absolute;
+    border:none;
+    background:none;
+}
+.container-burger-menu img{
+    width:20px;
+    pointer-events: none;
+}
+a{
+	text-decoration: none;
+}
+.window .left-menu .left-menu-inner .menu-box{
+	position:absolute;
+	top:50px;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.window .left-menu .left-menu-inner .menu-box .menu-box-inner{
+	width:100%;
+	height:100%;
+}
+.window .left-menu .left-menu-inner .menu-box .menu-box-inner .item-in-menu{
+	display:block;
+	position: relative;
+	width: 250px;
+	border-bottom: solid 1px #1a3e4e;
+}
+.window .left-menu .left-menu-inner .menu-box .menu-box-inner .item-in-menu a{
+	color: #fff;
+	text-decoration: none;
+	display:block;
+	cursor:pointer;
+	padding: 10px 15px 10px 50px
+}
+.window .container{
+	position:relative;
+	height:100vh;
+	background: #fff;
+	margin-left:250px;
+}
+.window .container .container-header{
+	height:50px;
+	position:fixed;
+	left:0;
+	top:0;
+	overflow:hidden;
+	background: #ddd;
+	right:0;
+	padding-left:250px;
+	z-index:1;
+}
+.window .container .container-login{
+    position: relative;
+    float:right;
+    top: 10px;
+    right: 50px;
+}
+.window .container .container-login a{
+    color: #1489bb;
+}
+.window .container .container-login a img{
+    height:18px;
+    vertical-align: bottom;
+}
+
+.window .container .container-content{
+	position:relative;
+	top:100px;
+	left:11%;
+	width: 71%;
+    padding-bottom:15px;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+}
+.window .container .container-content .box-content{
+	margin:0 auto;
+	width:96%;
+	padding-top:5px;
+}

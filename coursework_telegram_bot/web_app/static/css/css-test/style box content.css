@@ -1,0 +1,29 @@
+.window .container .container-content .box-content .item-in-box-content{
+	display:flex;
+	background-color: #fff;
+	justify-content: space-between;
+	border-bottom: solid 1px #cdd1d3;
+}
+
+.window .container .container-content .box-content .item-in-box-content span{
+	display:block;
+	width:76%;
+	padding-top:6px;
+	padding-bottom:3px;
+	font-size: 0.9em;
+	cursor:pointer;
+}
+.window .container .container-content .box-content .item-in-box-content input{
+    width:70%;
+}
+
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item button[type="button"]{
+	cursor: pointer;
+	background: none;
+    border: none;
+    position: relative;
+    top: 1px;
+}
+.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item button[type="button"] img{
+	vertical-align:middle;
+}

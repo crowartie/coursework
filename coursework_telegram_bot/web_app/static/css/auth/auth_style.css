@@ -1,0 +1,89 @@
+body{
+	margin:0;
+	font-size:16px;
+	font-family:Roboto Condensed,Arial,sans-serif;
+}
+.window{
+	position:relative;
+	min-height:100vh;
+	overflow:hidden;
+}
+.window .header{
+	height:50px;
+	position:fixed;
+	left:0;
+	top:0;
+	overflow:hidden;
+	background: #ddd;
+	right:0;
+	z-index:1;
+}
+.window .header .logo{
+    height:50px;
+    width:250px;
+}
+.window .header .logo img{
+    width:180px;
+    padding-left:30px;
+	padding-top:15px;
+	display:block;
+    position: absolute;
+}
+.window .container{
+    position:relative;
+	background: #fff;
+}
+.window .container .login-container{
+    position:relative;
+    width: 40%;
+    margin-top:15%;
+    margin-left: 30%;
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 6px #ddd;
+}
+.window .container .login-container .login-header{
+    margin:0;
+    background: #1489bb;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.window .container .login-container form{
+    background: #ebebeb;
+    padding: 12px;
+}
+.window .container .login-container form input{
+    box-sizing: border-box;
+    display: block;
+    margin:0 auto;
+    width: 90%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+.window .container .login-container form input[type='text'],.window .container .login-container form input[type='password']{
+    margin-bottom:10px;
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+.window .container .login-container form input[type='submit']{
+    background: #1489bb;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+}
+.window .container .login-container form input[type="text"]:focus,
+.window .container .login-container form input[type="password"]:focus {
+  border-color: #888;
+}
+.window .container .login-container form input[type="submit"]:hover {
+  background: #1f7397;
+}
