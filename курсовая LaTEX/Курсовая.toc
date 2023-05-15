@@ -4,9 +4,9 @@
 \contentsline {chapter}{\numberline {2}\large {РАЗРАБОТКА БОТА}}{7}{}%
 \contentsline {section}{\numberline {2.1}Создание бота, создание проекта и установка библиотеки}{7}{}%
 \contentsline {section}{\numberline {2.2}Подключение базы данных к боту}{8}{}%
-\contentsline {section}{\numberline {2.3}Разработка функции отправки текста курса для обучения}{10}{}%
+\contentsline {section}{\numberline {2.3}Разработка функции отправки текста курса для обучения}{9}{}%
 \contentsline {section}{\numberline {2.4}Разработка функции тесты}{13}{}%
-\contentsline {section}{\numberline {2.5}Разработка функции результаты}{19}{}%
+\contentsline {section}{\numberline {2.5}Разработка функции результаты}{18}{}%
 \contentsline {section}{\numberline {2.6}Подведение итогов главы}{19}{}%
 \contentsline {chapter}{\numberline {3}\large {{РАЗРАБОТКА ВЕБ ПРИЛОЖЕНИЯ ДЛЯ ОБСЛУЖИВАНИЯ БОТА}}}{20}{}%
 \contentsline {section}{\numberline {3.1}Создание структуры веб приложения, установка библиотек и создание экземпляра приложения}{20}{}%
@@ -14,7 +14,10 @@
 \contentsline {section}{\numberline {3.3}Создание шаблона страницы}{23}{}%
 \contentsline {section}{\numberline {3.4}Создание страницы тесты}{25}{}%
 \contentsline {section}{\numberline {3.5}Создание страницы тест}{30}{}%
-\contentsline {section}{\numberline {3.6}Создание страницы курсы}{34}{}%
-\contentsline {section}{\numberline {3.7}Подведение итогов главы}{36}{}%
-\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{37}{}%
-\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{38}{}%
+\contentsline {section}{\numberline {3.6}Создание страницы курсы}{33}{}%
+\contentsline {section}{\numberline {3.7}Подведение итогов главы}{35}{}%
+\contentsline {chapter}{ЗАКЛЮЧЕНИЕ}{36}{}%
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{37}{}%
+\contentsline {chapter}{ПРИЛОЖЕНИЯ}{39}{}%
+\contentsline {section}{Приложение А}{39}{}%
+\contentsline {section}{Приложение Б}{39}{}%

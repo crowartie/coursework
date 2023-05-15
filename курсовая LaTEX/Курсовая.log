@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.8)  10 MAY 2023 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.8)  15 MAY 2023 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,9 +676,9 @@ ses, database, functions,
 [7
 
 ]
-Overfull \hbox (38.58138pt too wide) in paragraph at lines 250--251
-\T2A/cmr/m/n/14.4 Со-зда-јм пе-ре-мен-ную bot и за-пи-сы-ва-ем в неј \T2A/cmr/b
-x/n/14.4 telebot.TeleBot(os.getenv('token'))\T2A/cmr/m/n/14.4 .
+Overfull \hbox (8.44847pt too wide) in paragraph at lines 250--251
+\T2A/cmr/m/n/14.4 Со-зда-јм пе-ре-мен-ную bot и за-пи-сы-ва-ем в неј  telebot.T
+eleBot(os.getenv('token')).
  []
 
 <1.jpeg, id=34, 564.60938pt x 199.49532pt>
@@ -687,147 +687,97 @@ File: 1.jpeg Graphic file (type jpg)
 Package pdftex.def Info: 1.jpeg  used on input line 254.
 (pdftex.def)             Requested size: 386.95897pt x 136.7265pt.
 [8 <./1.jpeg>]
-Overfull \hbox (7.90858pt too wide) in paragraph at lines 268--269
-\T2A/cmr/m/n/14.4 Переходим в файл \T2A/cmr/bx/n/14.4 .env \T2A/cmr/m/n/14.4 и 
-со-зда-јм пе-ре-мен-ные \T2A/cmr/bx/n/14.4 host\T2A/cmr/m/n/14.4 ,\T2A/cmr/bx/n
-/14.4 dbname\T2A/cmr/m/n/14.4 , \T2A/cmr/bx/n/14.4 user \T2A/cmr/m/n/14.4 и \T2
-A/cmr/bx/n/14.4 password\T2A/cmr/m/n/14.4 .
- []
-
 <2.jpeg, id=38, 564.60938pt x 155.07938pt>
 File: 2.jpeg Graphic file (type jpg)
 <use 2.jpeg>
-Package pdftex.def Info: 2.jpeg  used on input line 280.
+Package pdftex.def Info: 2.jpeg  used on input line 279.
 (pdftex.def)             Requested size: 386.95897pt x 106.2855pt.
-[9 <./2.jpeg>] [10]
-Overfull \hbox (2.89493pt too wide) in paragraph at lines 304--305
-\T2A/cmr/m/n/14.4 дит об-ра-ще-ние к функ-ции ге-не-ра-ции кно-пок спис-ка из ф
-ай-ла \T2A/cmr/bx/n/14.4 buttonsCourse\T2A/cmr/m/n/14.4 ,
- []
-
-[11]
-Overfull \hbox (1.49379pt too wide) in paragraph at lines 319--321
-[]\T2A/cmr/m/n/14.4 Создајм python файл \T2A/cmr/bx/n/14.4 funcCourse \T2A/cmr/
-m/n/14.4 с им-пор-том фай-лов \T2A/cmr/bx/n/14.4 coursesRequest\T2A/cmr/m/n/14.
-4 ,
- []
-
-[12] [13] [14] [15] [16] [17] [18] [19]
+ [9 <./2.jpeg>] [10] [11] [12] [13] [14] [15] [16] [17] [18]
+[19]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+<3.png, id=74, 224.2779pt x 22.6446pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 442.
+(pdftex.def)             Requested size: 386.95897pt x 39.07442pt.
 [20
 
 ]
-<3.png, id=77, 224.2779pt x 22.6446pt>
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 443.
-(pdftex.def)             Requested size: 386.95897pt x 39.07442pt.
 <4.jpeg, id=79, 770.88pt x 374.14781pt>
 File: 4.jpeg Graphic file (type jpg)
 <use 4.jpeg>
-Package pdftex.def Info: 4.jpeg  used on input line 451.
+Package pdftex.def Info: 4.jpeg  used on input line 450.
 (pdftex.def)             Requested size: 290.22107pt x 140.85884pt.
  [21 <./3.png> <./4.jpeg>]
-Overfull \hbox (7.64468pt too wide) in paragraph at lines 466--467
-[]\T2A/cmr/m/n/14.4 Во flask есть рас-ши-ре-ние \T2A/cmr/bx/n/14.4 flask-login\
-T2A/cmr/m/n/14.4 , оно поз-во-ля-ет ин-те-гри-ро-вать аутен-
+Overfull \hbox (1.2562pt too wide) in paragraph at lines 465--466
+[]\T2A/cmr/m/n/14.4 Во flask есть рас-ши-ре-ние  flask-login, оно поз-во-ля-ет 
+ин-те-гри-ро-вать аутен-
  []
 
-
-Overfull \hbox (4.85144pt too wide) in paragraph at lines 468--469
-\T2A/cmr/m/n/14.4 тип \T2A/cmr/bx/n/14.4 int \T2A/cmr/m/n/14.4 и яв-ля-ет-ся пе
-р-вич-ный клю-чом, вы-гля-дит так \T2A/cmr/bx/n/14.4 db.Column(db.Integer,
- []
-
-
-Overfull \hbox (5.07388pt too wide) in paragraph at lines 468--469
-\T2A/cmr/m/n/14.4 ре-а-ли-зу-ет ме-то-ды: is_authenticated, is_active, is_anony
-mous, и сра-бо-та-ет толь-
- []
-
-
-Overfull \hbox (24.7942pt too wide) in paragraph at lines 468--469
-\T2A/cmr/m/n/14.4 это чуть позд-нее. В дан-ный файл мы им-пор-ти-ро-ва-ли пе-ре
--мен-ную \T2A/cmr/bx/n/14.4 login manager\T2A/cmr/m/n/14.4 ,
- []
-
-[22]
-Overfull \hbox (27.62573pt too wide) in paragraph at lines 470--471
-\T2A/cmr/m/n/14.4 кон-крет-ной БД, под-клю-ча-ем-ся к БД \T2A/cmr/bx/n/14.4 app
-.config['SQLALCHEMY DATABASE
- []
-
-
-Overfull \hbox (0.4754pt too wide) in paragraph at lines 472--473
-[]\T2A/cmr/m/n/14.4 Обрабатывать бу-дем \T2A/cmr/bx/n/14.4 POST \T2A/cmr/m/n/14
-.4 за-прос с дан-ной стра-ни-цы по ад-ре-су \T2A/cmr/bx/n/14.4 /login\T2A/cmr/m
-/n/14.4 .
- []
-
-[23]
+[22] [23]
 <7.png, id=90, 1927.2pt x 932.48375pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 488.
+Package pdftex.def Info: 7.png  used on input line 487.
 (pdftex.def)             Requested size: 386.95897pt x 187.2191pt.
  [24 <./7.png (PNG copy)>]
 <8.jpg, id=94, 1404.74812pt x 715.92468pt>
 File: 8.jpg Graphic file (type jpg)
 <use 8.jpg>
-Package pdftex.def Info: 8.jpg  used on input line 503.
+Package pdftex.def Info: 8.jpg  used on input line 502.
 (pdftex.def)             Requested size: 386.95897pt x 197.21307pt.
+ [25]
 
-Overfull \hbox (4.87793pt too wide) in paragraph at lines 501--506
-\T2A/cmr/m/n/14.4 В пап-ке \T2A/cmr/bx/n/14.4 templates \T2A/cmr/m/n/14.4 со-зд
-а-јм html файл tests, все html фай-лы в пап-ке \T2A/cmr/bx/n/14.4 templates
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26] [27 <./8.jpg>] [28] [29] [30] [31] [32] [33]
-Overfull \hbox (6.67134pt too wide) in paragraph at lines 557--558
+[26] [27 <./8.jpg>] [28] [29] [30] [31] [32] [33]
+Overfull \hbox (6.67134pt too wide) in paragraph at lines 556--557
 []\T2A/cmr/m/n/14.4 Создајм функ-цию за-груз-ки фай-ла с тек-стом,для кноп-ки з
 а-гру-зить файл.
  []
 
-[34] [35] [36]
-Overfull \hbox (21.3382pt too wide) in paragraph at lines 574--575
-[]\T2A/cmr/m/n/14.4 Таким об-ра-зом ре-зуль-та-том вы-пуск-ной ква-ли-фи-ка-ци-
-он-ной ра-бо-ты telegram
- []
-
-[37
+[34] [35] [36
 
 ]
-Overfull \hbox (28.2095pt too wide) in paragraph at lines 580--581
+Overfull \hbox (28.2095pt too wide) in paragraph at lines 578--579
 \T2A/cmr/m/n/14.4 https://www.digitalocean.com/community/tutorials/how-to-add-a
 uthentication-
  []
 
 
-Overfull \hbox (23.5458pt too wide) in paragraph at lines 582--583
+Overfull \hbox (23.5458pt too wide) in paragraph at lines 580--581
 \T2A/cmr/m/n/14.4 https://docs-python.ru/packages/veb-frejmvork-flask-python/fl
 ask-sqlalchemy/. 
  []
 
-[38
+[37
 
-] (РљСѓСЂСЃРѕРІР°СЏ.aux) ) 
+] [38]
+<Р‘Р”.jpg, id=140, 609.02531pt x 428.35031pt>
+File: Р‘Р”.jpg Graphic file (type jpg)
+<use Р‘Р”.jpg>
+Package pdftex.def Info: Р‘Р”.jpg  used on input line 600.
+(pdftex.def)             Requested size: 386.95897pt x 272.16936pt.
+ [39
+
+ <./Р‘Р”.jpg>] (РљСѓСЂСЃРѕРІР°СЏ.aux) ) 
 Here is how much of TeX's memory you used:
- 10520 strings out of 476331
- 222711 string characters out of 5797581
+ 10528 strings out of 476331
+ 222812 string characters out of 5797581
  1860660 words of memory out of 5000000
- 30780 multiletter control sequences out of 15000+600000
+ 30787 multiletter control sequences out of 15000+600000
  521085 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,7n,77p,4957b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\stepa\AppData\Local\MiKTeX\fonts/pk/ljfour
-/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\stepa\AppData\Local\MiKTeX\fonts/pk/lj
-four/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\stepa\AppData\Local\MiKTeX\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\stepa\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> <C:\Users\stepa\AppData\Local\MiKTeX
-\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk>
-Output written on РљСѓСЂСЃРѕРІР°СЏ.pdf (38 pages, 425886 bytes).
+ 73i,7n,77p,4897b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\stepa\AppData\Local\MiKTeX\fo
+nts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\stepa\AppData\Local\MiKTe
+X\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\stepa\AppData\Local\M
+iKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\stepa\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> <C:\Users\stepa\AppData
+\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk>
+Output written on РљСѓСЂСЃРѕРІР°СЏ.pdf (39 pages, 501115 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
+ 468 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
