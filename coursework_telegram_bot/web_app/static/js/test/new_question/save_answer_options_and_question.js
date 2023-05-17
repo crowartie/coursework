@@ -15,8 +15,7 @@ function save_answer_options_and_question_in_new_question(){
         return;
     }
     create_new_question($('.window .container .container-content .box-content .item-in-box-content span').last().text()).done(function(response){
-        $('.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item').last().on('click','.del',delete_question);
-        $('.window .container .container-content .box-content .item-in-box-content .action-buttons-in-item').last().on('click','.edit',edit_question)
+
 
         var text="Создан новый вопрос.";
         show_toast("Успех",text);
@@ -32,10 +31,11 @@ function save_answer_options_and_question_in_new_question(){
             }
             arrNewAnswers.push({
                 'id_question': $('.window .container .container-content .box-content .item-in-box-content').last().attr('id'),
-                'answerOption': $(this).val(),
+                'answerOption': $(this).parent().parent().parent().children('span').text(),
                 'answer': answer
             });
         });
+        console.log(arrNewAnswers);
         create_new_answer_in_new_question(arrNewAnswers).done(function(response){
             var text="Созданы варианты ответа для созданного вопроса.";
             show_toast("Успех",text);

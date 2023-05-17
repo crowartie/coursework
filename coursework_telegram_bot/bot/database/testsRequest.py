@@ -11,7 +11,8 @@ def get_tests():
     finally:
         connection.close()
 
-def get_question(test_id,num_question):
+
+def get_question(test_id, num_question):
     connection = create_connection()
     try:
         cursor = connection.cursor()
@@ -38,6 +39,7 @@ def get_answer_option(question):
     finally:
         connection.close()
 
+
 def get_action_test(user):
     connection = create_connection()
     try:
@@ -51,6 +53,7 @@ def get_action_test(user):
         return cursor.fetchone()
     finally:
         connection.close()
+
 
 def get_test():
     connection = create_connection()
@@ -67,3 +70,13 @@ def get_test():
         connection.close()
 
 
+
+def get_data_test(test):
+    connection = create_connection()
+    try:
+        cursor = connection.cursor()
+        select = f"""SELECT * from tests where callback = '{test}'"""
+        cursor.execute(select)
+        return cursor.fetchone()
+    finally:
+        connection.close()

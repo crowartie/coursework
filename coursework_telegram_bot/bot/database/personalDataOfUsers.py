@@ -1,5 +1,7 @@
 from bot.database.MySQLConnect import create_connection
 from bot.functions import funcCourse
+
+
 def find_a_user_in_the_bot_database(user):
     connection = create_connection()
     try:
@@ -9,6 +11,7 @@ def find_a_user_in_the_bot_database(user):
         return cursor.fetchall()
     finally:
         connection.close()
+
 
 def add_a_user_in_the_bot_database(user):
     connection = create_connection()
@@ -21,10 +24,11 @@ def add_a_user_in_the_bot_database(user):
         connection.commit()
         connection.close()
 
-def get_data_activity_user_for_courses(user,course):
-    connection=create_connection()
+
+def get_data_activity_user_for_courses(user, course):
+    connection = create_connection()
     try:
-        print(user,course)
+        print(user, course)
 
         cursor = connection.cursor()
         select = f"""UPDATE usersActivityInCourses SET  is_passing = 1                                         
@@ -41,8 +45,9 @@ def get_data_activity_user_for_courses(user,course):
         connection.commit()
         connection.close()
 
-def add_data_activity_user_for_courses(user,course):
-    connection=create_connection()
+
+def add_data_activity_user_for_courses(user, course):
+    connection = create_connection()
     try:
         cursor = connection.cursor()
         select = f"""insert into usersActivityInCourses (user_id,	course_id,	is_passing,	send_symbols,	max_size_course) 
@@ -54,7 +59,8 @@ def add_data_activity_user_for_courses(user,course):
         connection.commit()
         connection.close()
 
-def update_data_activity_user_for_courses(user_id,send_symbols):
+
+def update_data_activity_user_for_courses(user_id, send_symbols):
     connection = create_connection()
     try:
         cursor = connection.cursor()
@@ -66,8 +72,9 @@ def update_data_activity_user_for_courses(user_id,send_symbols):
         connection.commit()
         connection.close()
 
+
 def get_data_activity_user_while_passing_course(user):
-    connection=create_connection()
+    connection = create_connection()
     try:
         cursor = connection.cursor()
         select = f"""select user_id, course_id,	is_passing,	send_symbols, max_size_course
@@ -78,8 +85,9 @@ def get_data_activity_user_while_passing_course(user):
     finally:
         connection.close()
 
-def get_data_activity_user_for_tests(user,test):
-    connection=create_connection()
+
+def get_data_activity_user_for_tests(user, test):
+    connection = create_connection()
     try:
         cursor = connection.cursor()
         select = f"""UPDATE usersActivityInTests SET  is_passing = 1                                         
@@ -95,8 +103,9 @@ def get_data_activity_user_for_tests(user,test):
         connection.commit()
         connection.close()
 
-def add_data_activity_user_for_tests(user,test):
-    connection=create_connection()
+
+def add_data_activity_user_for_tests(user, test):
+    connection = create_connection()
     try:
         cursor = connection.cursor()
         select = f"""insert into usersActivityInTests (user_id, test_id, num_question, is_passing, 
@@ -112,6 +121,7 @@ def add_data_activity_user_for_tests(user,test):
         connection.commit()
         connection.close()
 
+
 def update_data_activity_user_for_tests(user):
     connection = create_connection()
     try:
@@ -124,7 +134,8 @@ def update_data_activity_user_for_tests(user):
         connection.commit()
         connection.close()
 
-def get_data_activity_user_for_create_result(user,test_id):
+
+def get_data_activity_user_for_create_result(user, test_id):
     connection = create_connection()
     try:
         cursor = connection.cursor()
@@ -134,4 +145,26 @@ def get_data_activity_user_for_create_result(user,test_id):
         cursor.execute(select)
         return cursor.fetchone()
     finally:
+        connection.close()
+
+def reset_is_passing_in_tests(user):
+    connection = create_connection()
+    try:
+        cursor = connection.cursor()
+        select = f"""UPDATE usersActivityInTests SET is_passing = 0
+                             WHERE user_id=(select id from users where user='{user}')"""
+        cursor.execute(select)
+    finally:
+        connection.commit()
+        connection.close()
+
+def reset_is_passing_in_courses(user):
+    connection = create_connection()
+    try:
+        cursor = connection.cursor()
+        select = f"""UPDATE usersActivityInCourses SET is_passing = 0
+                             WHERE user_id=(select id from users where user='{user}')"""
+        cursor.execute(select)
+    finally:
+        connection.commit()
         connection.close()

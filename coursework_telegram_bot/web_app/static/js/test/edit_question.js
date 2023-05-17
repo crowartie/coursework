@@ -1,6 +1,7 @@
 function edit_question(){
     var question_id = $(this).parent().parent().attr('id');
     var oldNameQuestion=$(this).parent().parent().children('span').text();
+    console.log(oldNameQuestion);
     $(this).parent().parent().children('span').replaceWith(`
             <input type="text" id="input-edit-question">`);
     $('#input-edit-question').val(oldNameQuestion);

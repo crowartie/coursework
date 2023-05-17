@@ -6,6 +6,7 @@ from bot.functions import funcCourse
 def courses(bot):
     @bot.callback_query_handler(func=lambda call: call.data == "courses")
     def send_courses(call):
+        personalDataOfUsers.reset_is_passing_in_courses(call.message.chat.id)
         bot.edit_message_text(chat_id=call.message.chat.id,
                               message_id=call.message.id,
                               text="Курсы:",
@@ -21,7 +22,12 @@ def courses(bot):
     def course(call):
         userActivityInCourse=personalDataOfUsers.get_data_activity_user_for_courses(call.message.chat.id,call.data)
         if userActivityInCourse:
-            pass
+            dataCourseForUser = funcCourse.get_course_text_for_send_user(userActivityInCourse, call.data)
+            bot.edit_message_text(chat_id=call.message.chat.id,
+                                  message_id=call.message.id,
+                                  text=dataCourseForUser['text'],
+                                  reply_markup=dataCourseForUser['buttons'])
+            return
 
         else:
             personalDataOfUsers.add_data_activity_user_for_courses(call.message.chat.id,call.data)

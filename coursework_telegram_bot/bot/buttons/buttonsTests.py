@@ -10,3 +10,8 @@ def generate_buttons_tests():
     return markup
 
 
+def generate_button_cancel_test():
+    markup = types.InlineKeyboardMarkup(row_width=1)
+    markup.add(types.InlineKeyboardButton(text="Вернуться к тестам",
+                                          callback_data="tests"))
+    return markup

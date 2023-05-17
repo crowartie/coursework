@@ -33,4 +33,3 @@ def get_file_course_by_id_course(course_id):
     finally:
         connection.close()
 
-

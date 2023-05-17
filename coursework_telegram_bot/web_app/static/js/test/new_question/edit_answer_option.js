@@ -39,6 +39,7 @@ function edit_answer_option_new_question(){
         }
         else if(e.which==27){
             $('#input-edit-answer').replaceWith(`<span>${oldNameAnswer}</span>`);
+
             return
         }
 
